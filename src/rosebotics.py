@@ -36,6 +36,8 @@ class Snatch3rRobot(object):
         for k in range(time):
             self.go(wheel_percentage, -wheel_percentage)
 
+    # add def for turning the robot and each member needs to test one of the functions that they did not create
+
 
 class Wheel(object):
     def __init__(self, port, default_duty_cycle_percent=100,

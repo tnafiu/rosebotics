@@ -39,5 +39,23 @@ def run_test_go_stop():
     print(robot.right_wheel.get_degrees_spun())
     print(robot.left_wheel.get_degrees_spun())
 
+def run_test_forward():
+    """ Tests the   forward   Snatch3rRobot method. """
+    robot = rb.Snatch3rRobot()
+
+    robot.forward(10, 25)
+
+    print(robot.right_wheel.get_degrees_spun())
+    print(robot.left_wheel.get_degrees_spun())
+    robot.left_wheel.reset_degrees_spun(0)
+
+
+    time.sleep(2)
+
+    robot.forward(5, 100)
+
+    print(robot.right_wheel.get_degrees_spun())
+    print(robot.left_wheel.get_degrees_spun())
+
 
 main()
